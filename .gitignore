@@ -1,6 +1,6 @@
 # Godot import cache and editor state
 .godot/
 *.translation
-export_presets.cfg
+/build/
 # Test screenshots
 /shots/

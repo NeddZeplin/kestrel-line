@@ -22,24 +22,24 @@ const WEAP := {
 const DRONE_HIT := {"dmg": 100.0, "pen": 70.0, "top": true, "soft": 0.6}
 
 const DEFS := {
-	"rifle": {"name": "Rifle squad", "glyph": "inf", "hp": 100.0, "armor": [0.0, 0.0], "speed": 5.0, "move": "foot", "weapons": ["mg", "rpg"], "cost": 60, "small": true, "men": 4, "model": "squad", "role": "MG for infantry, rockets for close armor"},
-	"atgm": {"name": "ATGM team", "glyph": "at", "hp": 60.0, "armor": [0.0, 0.0], "speed": 4.5, "move": "foot", "weapons": ["atgm"], "cost": 140, "small": true, "men": 2, "model": "atgm_team", "role": "Long-range tank killer"},
-	"mortar": {"name": "Mortar team", "glyph": "mortar", "hp": 60.0, "armor": [0.0, 0.0], "speed": 4.0, "move": "foot", "weapons": ["mortar"], "cost": 150, "small": true, "men": 2, "model": "mortar_team", "role": "Indirect fire on anything spotted"},
-	"mbt": {"name": "Main battle tank", "glyph": "armor", "hp": 300.0, "armor": [80.0, 35.0], "speed": 10.0, "move": "track", "weapons": ["tankgun", "coax"], "cost": 320, "model": "tank", "role": "Mobile reserve, strong frontal armor"},
-	"shorad": {"name": "SHORAD vehicle", "glyph": "ada", "hp": 140.0, "armor": [20.0, 12.0], "speed": 11.0, "move": "wheel", "weapons": ["sam", "hmg"], "cost": 190, "model": "shorad", "role": "Shoots down drones and helicopters"},
-	"einf": {"name": "Infantry squad", "glyph": "inf", "hp": 100.0, "armor": [0.0, 0.0], "speed": 5.0, "move": "foot", "weapons": ["mg", "rpg"], "reward": 18, "leak": 1, "small": true, "men": 4, "model": "squad"},
-	"tech": {"name": "Technical", "glyph": "recon", "hp": 70.0, "armor": [6.0, 6.0], "speed": 14.0, "move": "wheel", "weapons": ["hmg"], "reward": 20, "leak": 1, "model": "technical"},
-	"ifv": {"name": "IFV", "glyph": "mech", "hp": 180.0, "armor": [30.0, 15.0], "speed": 10.0, "move": "track", "weapons": ["autocannon", "ifv_atgm"], "reward": 50, "leak": 2, "model": "ifv"},
-	"embt": {"name": "Main battle tank", "glyph": "armor", "hp": 300.0, "armor": [75.0, 32.0], "speed": 9.0, "move": "track", "weapons": ["tankgun", "coax"], "reward": 90, "leak": 4, "model": "tank"},
-	"drone": {"name": "Loitering munition", "glyph": "uav", "hp": 18.0, "armor": [0.0, 0.0], "speed": 30.0, "move": "air", "alt": 35.0, "weapons": [], "reward": 12, "leak": 1, "model": "drone", "air": true},
-	"helo": {"name": "Attack helicopter", "glyph": "rotary", "hp": 220.0, "armor": [12.0, 12.0], "speed": 32.0, "move": "air", "alt": 55.0, "weapons": ["helo_atgm", "helo_gun"], "reward": 120, "leak": 3, "model": "helo", "air": true},
+	"rifle": {"name": "Rifle squad", "glyph": "inf", "hp": 100.0, "armor": [0.0, 0.0], "speed": 7.0, "move": "foot", "weapons": ["mg", "rpg"], "cost": 60, "small": true, "men": 4, "model": "squad", "role": "MG for infantry, rockets for close armor"},
+	"atgm": {"name": "ATGM team", "glyph": "at", "hp": 60.0, "armor": [0.0, 0.0], "speed": 6.5, "move": "foot", "weapons": ["atgm"], "cost": 140, "small": true, "men": 2, "model": "atgm_team", "role": "Long-range tank killer"},
+	"mortar": {"name": "Mortar team", "glyph": "mortar", "hp": 60.0, "armor": [0.0, 0.0], "speed": 6.0, "move": "foot", "weapons": ["mortar"], "cost": 150, "small": true, "men": 2, "model": "mortar_team", "role": "Indirect fire on anything spotted"},
+	"mbt": {"name": "Main battle tank", "glyph": "armor", "hp": 300.0, "armor": [80.0, 35.0], "speed": 13.0, "move": "track", "weapons": ["tankgun", "coax"], "cost": 320, "model": "tank", "role": "Mobile reserve, strong frontal armor"},
+	"shorad": {"name": "SHORAD vehicle", "glyph": "ada", "hp": 140.0, "armor": [20.0, 12.0], "speed": 14.0, "move": "wheel", "weapons": ["sam", "hmg"], "cost": 190, "model": "shorad", "role": "Shoots down drones and helicopters"},
+	"einf": {"name": "Infantry squad", "glyph": "inf", "hp": 100.0, "armor": [0.0, 0.0], "speed": 9.0, "move": "foot", "weapons": ["mg", "rpg"], "reward": 18, "leak": 1, "small": true, "men": 4, "model": "squad"},
+	"tech": {"name": "Technical", "glyph": "recon", "hp": 70.0, "armor": [6.0, 6.0], "speed": 18.0, "move": "wheel", "weapons": ["hmg"], "reward": 20, "leak": 1, "model": "technical"},
+	"ifv": {"name": "IFV", "glyph": "mech", "hp": 180.0, "armor": [30.0, 15.0], "speed": 14.0, "move": "track", "weapons": ["autocannon", "ifv_atgm"], "reward": 50, "leak": 2, "model": "ifv"},
+	"embt": {"name": "Main battle tank", "glyph": "armor", "hp": 300.0, "armor": [75.0, 32.0], "speed": 12.5, "move": "track", "weapons": ["tankgun", "coax"], "reward": 90, "leak": 4, "model": "tank"},
+	"drone": {"name": "Loitering munition", "glyph": "uav", "hp": 18.0, "armor": [0.0, 0.0], "speed": 34.0, "move": "air", "alt": 35.0, "weapons": [], "reward": 12, "leak": 1, "model": "drone", "air": true},
+	"helo": {"name": "Attack helicopter", "glyph": "rotary", "hp": 220.0, "armor": [12.0, 12.0], "speed": 36.0, "move": "air", "alt": 55.0, "weapons": ["helo_atgm", "helo_gun"], "reward": 120, "leak": 3, "model": "helo", "air": true},
 }
 
 const PLAYER_KEYS := ["rifle", "atgm", "mortar", "mbt", "shorad"]
 const VALUE := {"mbt": 3.0, "embt": 3.0, "helo": 3.0, "ifv": 2.2, "shorad": 2.0, "atgm": 2.0, "tech": 1.5, "mortar": 1.5, "drone": 1.3, "rifle": 1.0, "einf": 1.0}
 
 ## How strongly each movement class avoids anti-tank and anti-personnel fire when routing.
-const MOVE_W := {"foot": {"at": 0.6, "ap": 5.0}, "track": {"at": 6.0, "ap": 0.3}, "wheel": {"at": 4.5, "ap": 3.0}}
+const MOVE_W := {"foot": {"at": 0.6, "ap": 3.0}, "track": {"at": 6.0, "ap": 0.3}, "wheel": {"at": 4.5, "ap": 2.5}}
 
 const START_SUPPLY := 900
 const HQ_INTEGRITY := 20

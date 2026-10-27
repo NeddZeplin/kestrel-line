@@ -194,6 +194,18 @@ func est_eff(w: Dictionary, t: Unit) -> float:
 	return e
 
 
+## Woods conceal: a unit under canopy can only be seen from close in. Applies to both sides.
+const CONCEAL_SMALL := 150.0
+const CONCEAL_VEHICLE := 250.0
+
+
+func can_see(from: Vector3, t: Unit) -> bool:
+	if not t.air and world.forest[Nav.k_of(t.p.x, t.p.y)] == 1:
+		if Vector2(from.x, from.z).distance_to(t.p) > (CONCEAL_SMALL if t.small else CONCEAL_VEHICLE):
+			return false
+	return Nav.los(world, from, Vector3(t.p.x, t.y + (0.0 if t.air else 1.8), t.p.y))
+
+
 func acquire(u: Unit) -> void:
 	var foes: Array = enemies if u.side == "p" else players
 	var eye := Vector3(u.p.x, u.y + (0.0 if u.air else 2.5), u.p.y)
@@ -218,7 +230,7 @@ func acquire(u: Unit) -> void:
 					continue
 			else:
 				if not seen.has(tu.uid):
-					seen[tu.uid] = Nav.los(world, eye, Vector3(tu.p.x, tu.y + (0.0 if tu.air else 1.8), tu.p.y))
+					seen[tu.uid] = can_see(eye, tu)
 				if not seen[tu.uid]:
 					continue
 			var sc: float = eff * GameData.VALUE.get(tu.type, 1.0) * (1.0 - 0.4 * d / w["range"])
@@ -510,6 +522,9 @@ func update_enemy(u: Unit, dt: float) -> void:
 		aim_turret(u, dt)
 		u.y = ground_y(u.p.x, u.p.y)
 		return
+	# Close to the objective, cautious groups stop skirting the defences and press the assault.
+	if u.variant == 0 and u.p.distance_to(HQ) < 450.0:
+		u.variant = 1
 	var key: String = u.def["move"] + str(u.variant)
 	var k := Nav.k_of(u.p.x, u.p.y)
 	var target := HQ
@@ -628,34 +643,34 @@ func update_spotting() -> void:
 		if eu.dead:
 			continue
 		eu.spotted = false
-		var target := Vector3(eu.p.x, eu.y + 1.5, eu.p.y)
 		for pu in players:
 			var pp: Unit = pu
-			if not pp.dead and pp.p.distance_to(eu.p) < 750.0 and Nav.los(world, Vector3(pp.p.x, pp.y + 2.5, pp.p.y), target):
+			if not pp.dead and pp.p.distance_to(eu.p) < 750.0 and can_see(Vector3(pp.p.x, pp.y + 2.5, pp.p.y), eu):
 				eu.spotted = true
 				break
-		if not eu.spotted and HQ.distance_to(eu.p) < 650.0 and Nav.los(world, hq_eye, target):
+		if not eu.spotted and HQ.distance_to(eu.p) < 650.0 and can_see(hq_eye, eu):
 			eu.spotted = true
 
 
 # ================= waves =================
 
 func send_wave() -> void:
-	if wave_active or over != "" or wave >= GameData.WAVES.size():
+	# Waves can be called early: a new wave's groups are queued behind whatever is still arriving.
+	if over != "" or wave >= GameData.WAVES.size():
 		return
 	var groups: Array = GameData.WAVES[wave]
 	wave += 1
+	if not wave_active:
+		wave_t = 0.0
 	wave_active = true
-	wave_t = 0.0
-	queue.clear()
-	var t := 0.0
+	var t := wave_t
 	var names: Array = []
 	for g in groups:
 		var s := randi() % 3
 		var v := 0 if randf() < 0.6 else 1
 		for i in int(g[1]):
-			queue.append({"t": t + i * 3.5, "type": g[0], "s": s, "v": v})
-		t += 12.0
+			queue.append({"t": t + i * 2.5, "type": g[0], "s": s, "v": v})
+		t += 8.0
 		names.append("%d× %s" % [g[1], GameData.DEFS[g[0]]["name"]])
 	queue.sort_custom(func(a, b): return a["t"] < b["t"])
 	log_msg("Wave %d: %s." % [wave, ", ".join(names)], "warn")

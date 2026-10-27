@@ -95,8 +95,14 @@ func _test_step(delta: float) -> void:
 			game.players.append(u)
 		game.supply = 400
 		game.threat_dirty = true
-		game.speed = 4.0
+		game.speed = 1.0 if OS.get_cmdline_user_args().has("--realtime") else 4.0
 		camera_rig.set_view(Vector3(hq.x - 200.0, 0.0, 0.0), 260.0, PI / 2.0 + 0.5)
+		if OS.get_cmdline_user_args().has("--realtime"):
+			camera_rig.set_view(Vector3(-60.0, 0.0, -40.0), 560.0, PI / 2.0 + 0.3)
+		if OS.get_cmdline_user_args().has("--ui"):
+			# Show the unit card and a closer view of the line for UI screenshots.
+			game.selection = [game.players[0]]
+			camera_rig.set_view(Vector3(hq.x - 170.0, 0.0, 10.0), 230.0, PI / 2.0 + 0.4)
 		if view == "close":
 			# Friendly and enemy armour side by side, paused, to compare paint schemes.
 			var base := hq + Vector2(-80.0, -5.0)
@@ -123,6 +129,11 @@ func _test_step(delta: float) -> void:
 		print("[test] t=%.0fs wave %d active=%s enemies=%d players=%d kills=%d lost=%d hq=%d supply=%d fps=%d" % [
 			test_t, game.wave, game.wave_active, game.enemies.size(), game.players.size(), game.kills, game.lost,
 			game.integrity, game.supply, Engine.get_frames_per_second()])
+		if OS.get_cmdline_user_args().has("--trace"):
+			for e in game.enemies:
+				var k := Nav.k_of(e.p.x, e.p.y)
+				print("[trace]   %s#%d (%.0f, %.0f) to-HQ %.0f m  forest=%d  speed=%.1f  halt=%s  variant=%d" % [e.type, e.uid, e.p.x, e.p.y,
+					e.p.distance_to(WorldGen.HQ), game.world.forest[k], e.vel.length(), e.halt, e.variant])
 		if game.enemies.size() <= 2:
 			for e in game.enemies:
 				var tg := []
