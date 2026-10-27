@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bl422vt6julb2"]
+
+[ext_resource type="Texture2D" uid="uid://dj7unladil4qh" path="res://ithappy/military_free/textures/Demonstration_Сamouflage_1.png" id="1_qq41f"]
+
+[resource]
+resource_name = "Camouflage_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_qq41f")
+metallic_specular = 0.25
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0

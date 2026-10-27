@@ -1,0 +1,41 @@
+[gd_scene format=4 uid="uid://dflxmnoo1e4mu"]
+
+[ext_resource type="Material" uid="uid://cla40tnfspjs6" path="res://ithappy/military_free/materials/standardmaterial3d.tres" id="1_dxolo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8vd4u"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mmqwc"]
+_surfaces = [{
+"aabb": AABB(-3.4332156, 0, -31.469828, 49.02354, 1e-05, 28.173126),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAgADAAUABgAEAAAABQADAAcABgAHAAQABQAHAAYACAAJAAoACgAJAAsACAAMAAkACgALAA0ADgAMAAgADQALAA8ADgAPAAwADQAPAA4AEAARABIAEgARABMAEAAUABEAEgATABUAFgAUABAAFQATABcAFgAXABQAFQAXABYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("7QEAAKP8AAAAAAAAkQAAAO0BAADsAwAAwGMAAJEAAAAAAAAA//8AANJhAADsAwAA0mEAAKP8AADAYwAA//8AAGpuAACGNwAAfGwAAAAAAABqbgAAWwMAAP//AAAAAAAAfGwAAOI6AAAR/gAAWwMAABH+AACGNwAA//8AAOI6AACkbgAASPwAALZsAABSSwAApG4AAK5OAAAI/wAAUksAALZsAACj/wAAGv0AAK5OAAAa/QAASPwAAAj/AACj/wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ksbvb"]
+resource_name = "frame_frame_mesh"
+_surfaces = [{
+"aabb": AABB(-3.4332156, 0, -31.469828, 49.02354, 1e-05, 28.173126),
+"attribute_data": PackedByteArray("7AQj+AAAAADsBNsH//8AAAAA//8S+9sHEvsj+P/////sBCP4AAAAAOwE2wf//wAAAAD//xL72wcS+yP4/////+wEI/gAAAAA7ATbB///AAAAAP//EvvbBxL7I/j/////"),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAgADAAUABgAEAAAABQADAAcABgAHAAQABQAHAAYACAAJAAoACgAJAAsACAAMAAkACgALAA0ADgAMAAgADQALAA8ADgAPAAwADQAPAA4AEAARABIAEgARABMAEAAUABEAEgATABUAFgAUABAAFQATABcAFgAXABQAFQAXABYA"),
+"material": SubResource("StandardMaterial3D_8vd4u"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("7QEAAKP8HMIAAAAAkQApwu0BAADsA0rCwGMAAJEAJsIAAAAA//8mwtJhAADsAxzC0mEAAKP8SsLAYwAA//8pwmpuAACGN2zAfGwAAAAAYsBqbgAAWwOGwP//AAAAAHjAfGwAAOI6eMAR/gAAWwNswBH+AACGN4bA//8AAOI6YsCkbgAASPzOwLZsAABSS9fApG4AAK5O68AI/wAAUkvVwLZsAACj/9XAGv0AAK5OzsAa/QAASPzrwAj/AACj/9fANddklGzr21b+6v9V7NaIlOzWiJQ112SU/ur/VWzr21YQ9SNqCut5ihno8ouU9CpplPQqaRD1I2oZ6PKLCut5ipnjMo6U8SpjDfEcYj/jX44/41+OmeMyjg3xHGKU8Spj")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mmqwc")
+
+[node name="frame2" type="Node3D" unique_id=1273350643]
+
+[node name="frame" type="MeshInstance3D" parent="." unique_id=1019825610]
+mesh = SubResource("ArrayMesh_ksbvb")
+surface_material_override/0 = ExtResource("1_dxolo")

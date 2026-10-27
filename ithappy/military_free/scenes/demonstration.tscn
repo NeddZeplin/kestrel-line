@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://c8i1wlubrqqvu"]
+
+[ext_resource type="PackedScene" uid="uid://dflxmnoo1e4mu" path="res://ithappy/military_free/prefabs/assets/frame.tscn" id="1_mk4jg"]
+[ext_resource type="PackedScene" uid="uid://bac5woueer4un" path="res://ithappy/military_free/prefabs/assets/buildings/tent_010.tscn" id="2_lrr5o"]
+[ext_resource type="PackedScene" uid="uid://og4mb7u4hs26" path="res://ithappy/military_free/prefabs/assets/buildings/tent_002.tscn" id="3_w37rk"]
+[ext_resource type="PackedScene" uid="uid://ce7qnktprrtiy" path="res://ithappy/military_free/prefabs/assets/buildings/tower_003.tscn" id="4_6c45a"]
+[ext_resource type="PackedScene" uid="uid://deoa7is0lqb7c" path="res://ithappy/military_free/prefabs/assets/buildings/radiostation_001.tscn" id="5_u6eex"]
+[ext_resource type="PackedScene" uid="uid://b6um6m7cfxnd5" path="res://ithappy/military_free/prefabs/assets/vehicles/helicopter_001.tscn" id="6_t2lql"]
+[ext_resource type="PackedScene" uid="uid://4dtdripuqy4e" path="res://ithappy/military_free/prefabs/assets/vehicles/hummer_003.tscn" id="7_brqti"]
+[ext_resource type="PackedScene" uid="uid://bcpkj1bu8clcj" path="res://ithappy/military_free/prefabs/assets/vehicles/machine_gun_004.tscn" id="8_1ysu1"]
+[ext_resource type="PackedScene" uid="uid://bsphpbqalksgp" path="res://ithappy/military_free/prefabs/assets/vehicles/protection_001.tscn" id="9_0a8mo"]
+[ext_resource type="PackedScene" uid="uid://euabomo2r1g7" path="res://ithappy/military_free/prefabs/assets/vehicles/machine_gun_005.tscn" id="10_n0pyb"]
+[ext_resource type="PackedScene" uid="uid://p62vr0ahxarf" path="res://ithappy/military_free/prefabs/assets/vehicles/door_003.tscn" id="11_nblnx"]
+[ext_resource type="PackedScene" uid="uid://qiu2eeb3pv6d" path="res://ithappy/military_free/prefabs/assets/vehicles/generator_004.tscn" id="12_j4rvg"]
+[ext_resource type="PackedScene" uid="uid://bpmu3lryuvxrb" path="res://ithappy/military_free/prefabs/assets/vehicles/tank_006.tscn" id="13_isfk1"]
+[ext_resource type="PackedScene" uid="uid://d3rk8c4g06xio" path="res://ithappy/military_free/prefabs/assets/decorations/tires_001.tscn" id="14_xjlsb"]
+[ext_resource type="PackedScene" uid="uid://cr6qiyykudg5m" path="res://ithappy/military_free/prefabs/assets/decorations/tire_001.tscn" id="15_3qxvu"]
+[ext_resource type="PackedScene" uid="uid://chk3qbbrouuhw" path="res://ithappy/military_free/prefabs/assets/decorations/barrel_005.tscn" id="16_rdawo"]
+[ext_resource type="PackedScene" uid="uid://cbwpjawv0tcug" path="res://ithappy/military_free/prefabs/assets/decorations/barrier_004.tscn" id="17_p0o7b"]
+[ext_resource type="PackedScene" uid="uid://c61yeix44tphq" path="res://ithappy/military_free/prefabs/assets/decorations/conditioner_002.tscn" id="18_ogfat"]
+[ext_resource type="PackedScene" uid="uid://cbdvs8kann8va" path="res://ithappy/military_free/prefabs/assets/decorations/target_002.tscn" id="19_v1558"]
+[ext_resource type="PackedScene" uid="uid://cv3djl6abpqqg" path="res://ithappy/military_free/prefabs/assets/decorations/target_001.tscn" id="20_yd36x"]
+[ext_resource type="PackedScene" uid="uid://dpmtxnxk5j7iy" path="res://ithappy/military_free/prefabs/assets/decorations/hedgehog_001.tscn" id="21_ttfyx"]
+[ext_resource type="PackedScene" uid="uid://nrjuwvoek5ko" path="res://ithappy/military_free/prefabs/assets/decorations/barrier_006.tscn" id="22_k4r0s"]
+[ext_resource type="PackedScene" uid="uid://cvxk7rsp7srct" path="res://ithappy/military_free/prefabs/assets/decorations/mortar_001.tscn" id="23_cyrga"]
+[ext_resource type="PackedScene" uid="uid://ceco5h6fe6hyu" path="res://ithappy/military_free/prefabs/assets/decorations/table_002.tscn" id="24_ks84h"]
+[ext_resource type="PackedScene" uid="uid://d3die4imveix5" path="res://ithappy/military_free/prefabs/assets/decorations/barrier_008.tscn" id="25_c2jrq"]
+[ext_resource type="PackedScene" uid="uid://bvhwdw3vwvn87" path="res://ithappy/military_free/prefabs/assets/decorations/barrier_009.tscn" id="26_ocjjc"]
+[ext_resource type="PackedScene" uid="uid://c3bvlwls3whog" path="res://ithappy/military_free/prefabs/assets/decorations/barrier_007.tscn" id="27_13spm"]
+[ext_resource type="PackedScene" uid="uid://dieva24xwfyex" path="res://ithappy/military_free/prefabs/assets/decorations/box_003.tscn" id="28_4p751"]
+[ext_resource type="PackedScene" uid="uid://bm13bxk1epllr" path="res://ithappy/military_free/prefabs/assets/decorations/box_005.tscn" id="29_ogc61"]
+[ext_resource type="PackedScene" uid="uid://c07vy46v66hga" path="res://ithappy/military_free/prefabs/assets/decorations/barrier_015.tscn" id="30_lh4cb"]
+[ext_resource type="PackedScene" uid="uid://bhap0frk5d3x0" path="res://ithappy/military_free/prefabs/assets/decorations/box_022.tscn" id="31_s7mee"]
+[ext_resource type="PackedScene" uid="uid://giqwgj31cwfc" path="res://ithappy/military_free/prefabs/assets/decorations/grass_008.tscn" id="32_hxfb5"]
+[ext_resource type="PackedScene" uid="uid://c10i27qgtdbkv" path="res://ithappy/military_free/prefabs/assets/decorations/grass_003.tscn" id="33_q1l4a"]
+[ext_resource type="PackedScene" uid="uid://ce18m81sgj7a0" path="res://ithappy/military_free/prefabs/assets/decorations/cactus_002.tscn" id="34_fc74q"]
+[ext_resource type="PackedScene" uid="uid://wsts6psoggjb" path="res://ithappy/military_free/prefabs/assets/decorations/cactus_001.tscn" id="35_jsr85"]
+[ext_resource type="Texture2D" uid="uid://6xjpijdre5vd" path="res://ithappy/military_free/textures/Skybox_3.png" id="36_fve5m"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_b1lj4"]
+panorama = ExtResource("36_fve5m")
+
+[sub_resource type="Sky" id="Sky_13qdw"]
+sky_material = SubResource("PanoramaSkyMaterial_b1lj4")
+
+[sub_resource type="Environment" id="Environment_xrivr"]
+background_mode = 2
+sky = SubResource("Sky_13qdw")
+glow_enabled = true
+glow_intensity = 2.0
+
+[node name="demonstration" type="Node3D" unique_id=521318183]
+
+[node name="frame" parent="." unique_id=1273350643 instance=ExtResource("1_mk4jg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.92902, 0, 0)
+
+[node name="tent_010" parent="." unique_id=1188239255 instance=ExtResource("2_lrr5o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.949383, 0.15028596, -10.808798)
+
+[node name="tent_002" parent="." unique_id=599361161 instance=ExtResource("3_w37rk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.84023, 0.15033937, -22.893858)
+
+[node name="tower_003" parent="." unique_id=714289838 instance=ExtResource("4_6c45a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.996265, 0.0096457, -25.565763)
+
+[node name="radiostation_001" parent="." unique_id=198294296 instance=ExtResource("5_u6eex")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.773792, 0.17673707, -10.0961075)
+
+[node name="helicopter_001" parent="." unique_id=524652068 instance=ExtResource("6_t2lql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.390495, 0, -14.201054)
+
+[node name="hummer_003" parent="." unique_id=214829295 instance=ExtResource("7_brqti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.78915, 0, -9.207623)
+
+[node name="machine_gun_004" parent="." unique_id=1108224808 instance=ExtResource("8_1ysu1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.78915, 2.0786283, -9.207623)
+
+[node name="protection_001" parent="." unique_id=1382990000 instance=ExtResource("9_0a8mo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.78915, 2.0786283, -9.207623)
+
+[node name="machine_gun_005" parent="." unique_id=173931805 instance=ExtResource("10_n0pyb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.986538, 2.058792, -8.752247)
+
+[node name="door_003" parent="." unique_id=1412039307 instance=ExtResource("11_nblnx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.986538, 2.058792, -9.632458)
+
+[node name="generator_004" parent="." unique_id=58274644 instance=ExtResource("12_j4rvg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.883904, 0, -9.207623)
+
+[node name="tank_006" parent="." unique_id=648241527 instance=ExtResource("13_isfk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.646355, 0, -11.193691)
+
+[node name="tires_001" parent="." unique_id=972671770 instance=ExtResource("14_xjlsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.277798, -0.0043518394, -29.207733)
+
+[node name="tire_001" parent="." unique_id=1498783913 instance=ExtResource("15_3qxvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.552233, 0.113148466, -29.207733)
+
+[node name="barrel_005" parent="." unique_id=345074761 instance=ExtResource("16_rdawo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.054527, 0.0008877218, -29.170738)
+
+[node name="barrier_004" parent="." unique_id=1873971249 instance=ExtResource("17_p0o7b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.886976, -0.0013588071, -27.528427)
+
+[node name="conditioner_002" parent="." unique_id=538523979 instance=ExtResource("18_ogfat")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.576408, -0.00019405782, -27.526634)
+
+[node name="target_002" parent="." unique_id=923937839 instance=ExtResource("19_v1558")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.182285, 0.00076137483, -29.045504)
+
+[node name="target_001" parent="." unique_id=1274766070 instance=ExtResource("20_yd36x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5031166, 0.0007690042, -29.045504)
+
+[node name="hedgehog_001" parent="." unique_id=1348503156 instance=ExtResource("21_ttfyx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.325904, -0.0019423664, -27.537077)
+
+[node name="barrier_006" parent="." unique_id=859632183 instance=ExtResource("22_k4r0s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.957014, 0.007597506, -28.760925)
+
+[node name="mortar_001" parent="." unique_id=842882024 instance=ExtResource("23_cyrga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.660471, 0.02137971, -27.550917)
+
+[node name="table_002" parent="." unique_id=2115237484 instance=ExtResource("24_ks84h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.846432, 0.0028179884, -27.635553)
+
+[node name="barrier_008" parent="." unique_id=694187743 instance=ExtResource("25_c2jrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.256075, 0.13630405, -27.340378)
+
+[node name="barrier_009" parent="." unique_id=2016205786 instance=ExtResource("26_ocjjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.395061, 0.12939945, -27.349297)
+
+[node name="barrier_007" parent="." unique_id=851069442 instance=ExtResource("27_13spm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.57188, -0.002674371, -26.46756)
+
+[node name="box_003" parent="." unique_id=1687249460 instance=ExtResource("28_4p751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.105173, 0.0050170124, -28.989023)
+
+[node name="box_005" parent="." unique_id=190633375 instance=ExtResource("29_ogc61")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.129688, 0.0028815567, -28.934526)
+
+[node name="barrier_015" parent="." unique_id=109966487 instance=ExtResource("30_lh4cb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.694218, 0.00076137483, -27.565048)
+
+[node name="box_022" parent="." unique_id=303732016 instance=ExtResource("31_s7mee")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.618397, 0, -27.559153)
+
+[node name="grass_008" parent="." unique_id=808646368 instance=ExtResource("32_hxfb5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.709616, 0, -28.963036)
+
+[node name="grass_003" parent="." unique_id=153806441 instance=ExtResource("33_q1l4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7855587, 0, -27.533875)
+
+[node name="cactus_002" parent="." unique_id=700457441 instance=ExtResource("34_fc74q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7545395, 0, -27.619564)
+
+[node name="cactus_001" parent="." unique_id=699132850 instance=ExtResource("35_jsr85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.16778, 0, -27.647884)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=291391312]
+environment = SubResource("Environment_xrivr")
